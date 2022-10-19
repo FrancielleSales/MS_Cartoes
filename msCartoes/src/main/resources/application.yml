@@ -1,6 +1,6 @@
 spring:
   application:
-    name: msClients
+    name: msCartoes
 
 server:
   port: 0
