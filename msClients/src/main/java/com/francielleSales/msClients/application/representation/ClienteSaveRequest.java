@@ -1,4 +1,4 @@
-package com.francielleSales.msClients.representation;
+package com.francielleSales.msClients.application.representation;
 
 import com.francielleSales.msClients.domain.Cliente;
 import lombok.Data;

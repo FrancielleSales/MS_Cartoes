@@ -2,7 +2,7 @@ package com.francielleSales.msClients.application;
 
 import com.francielleSales.msClients.domain.Cliente;
 import com.francielleSales.msClients.exceptions.GenericException;
-import com.francielleSales.msClients.representation.ClienteSaveRequest;
+import com.francielleSales.msClients.application.representation.ClienteSaveRequest;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -20,7 +20,7 @@ public class ClienteResource {
     private final ClienteService service;
 
     @PostMapping
-    public ResponseEntity save(@RequestBody @Valid ClienteSaveRequest request) throws GenericException {
+    public ResponseEntity cadastraCliente(@RequestBody @Valid ClienteSaveRequest request) throws GenericException {
         Cliente cliente = request.toModel();
         service.save(cliente);
         URI headerLocation = ServletUriComponentsBuilder

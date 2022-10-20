@@ -1,4 +1,4 @@
-package com.francielleSales.msClients.exceptions;
+package com.francielleSales.msCartoes.exceptions;
 
 public class GenericException extends Exception{
 
